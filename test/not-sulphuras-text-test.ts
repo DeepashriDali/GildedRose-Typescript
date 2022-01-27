@@ -1,0 +1,18 @@
+import { Item, GildedRose } from '../app/gilded-rose';
+
+// Add a master test here
+const items: Array<Item> = [
+new Item("Aged Brie", 12, 3),
+new Item("Aged Brie", 8, 9),
+new Item("Aged Brie", 5, 6),
+new Item("Backstage passes to a TAFKAL80ETC concert", 20, 10),
+new Item("Backstage passes to a TAFKAL80ETC concert", 8, 45),
+new Item("Backstage passes to a TAFKAL80ETC concert", 4, 48),
+new Item("Item1", 5, 2),
+]
+const gildedRose = new GildedRose(items);
+gildedRose.updateQuality();
+gildedRose.updateQuality();
+gildedRose.updateQuality();
+gildedRose.updateQuality();
+console.log(gildedRose.items);
